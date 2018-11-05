@@ -6,10 +6,11 @@
 2. Défis choisis 
 ## Défis de geste :
 
-- Secouer son téléphone jusqu'à qu'un clou vu de côté soit planté avec un marteau 
+- Secouer son téléphone jusqu'à qu'un clou vu de côté soit planté avec un marteau
+- Labyrinthe pour permettre à un garagiste de rejoindre sa caisse à outils
+
 ## Défis de mouvement :
 
-- Labyrinthe pour permettre à un garagiste de rejoindre sa caisse à outils
 - Choisir ce qu'on met dans une boîte à gants / ciasse à outils en swipant à gauche ou à droite
 ## Defis de réponse à une question :
 
