@@ -9,7 +9,8 @@
 - Secouer son téléphone jusqu'à qu'un clou vu de côté soit planté avec un marteau 
 ## Défis de mouvement :
 
-- Visser ou dévisser une vis --> sens de rotation différent
+- Labyrinthe pour permettre à un garagiste de rejoindre sa caisse à outils
+- Choisir ce qu'on met dans une boîte à gants / ciasse à outils en swipant à gauche ou à droite
 ## Defis de réponse à une question :
 
 - Question de calcul mental (nombre nombre aléatoire entre 1 et 10, choisir entre + et -)
