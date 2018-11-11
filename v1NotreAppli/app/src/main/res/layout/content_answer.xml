@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_resize_gesture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingVie..."
+    tools:context="com.example.issarompion.v1notreappli.AnswerActivity"
+    tools:showIn="@layout/activity_answer"
+    >
+
+    <Chronometer
+        android:id="@+id/simpleChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="68dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/consigneAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:text="@string/anwser"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/operation"
+        android:layout_width="267dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/consigneAnswer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="57dp"
+        android:gravity="center"
+        android:text="@string/nombre"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/reponse"
+        android:layout_width="301dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/operation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="196dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/math_answer"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/envoi"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onSubmitClick"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite" />
+
+
+</RelativeLayout>

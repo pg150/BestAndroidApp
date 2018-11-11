@@ -1,31 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:textColor="@color/colorPrimaryDark"
+    android:background="@color/colorPrimaryDark">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginTop="276dp"
-        android:text="@string/one_player"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:text="UN JOUEUR"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@color/colorPrimary"/>
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginBottom="208dp"
-        android:text="@string/two_players"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:text="DEUX JOUEURS "
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorRed"
 
-</android.support.constraint.ConstraintLayout>
+        />
+
+
+
+</LinearLayout>

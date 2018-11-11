@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.issarompion.v1notreappli">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -8,7 +11,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,9 +21,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".OnePlayerActivity" />
-        <activity android:name=".ShakeActivity" />
-        <activity android:name=".AnswerActivity" />
-        <activity android:name=".CircleActivity"></activity>
+        <activity
+            android:name=".ShakeActivity"
+            android:label="Defi geste 1 : Le tournevis " />
+        <activity
+            android:name=".AnswerActivity"
+            android:label="Défi question 1 : Maths" />
+        <activity
+            android:name=".CircleActivity"
+            android:label="Défi mouvement 1 : L&apos;écrou " />
+        <activity
+            android:name=".MouvActivity"
+            android:label="Défi mouvement 2 : L&apos;équipe de France" />
+        <activity android:name=".TwoPlayersActivity" />
+        <activity android:name=".ScoreActivity"></activity>
     </application>
 
 </manifest>

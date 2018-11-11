@@ -2,10 +2,16 @@
     <string name="app_name">v1NotreAppli</string>
     <string name="one_player">1 PLAYER</string>
     <string name="two_players">2 PLAYERS</string>
-    <string name="button_shake">Jeux de la bouteille</string>
-    <string name="shake">Secouez la bouteille !</string>
-    <string name="circle">Circle PINIIII !</string>
+    <string name="button_shake">Savoir utiliser un tournevis</string>
+    <string name="shake">Utilise le toune vis comme si tu vissait une vis</string>
+    <string name="circle">Serre l\'ecrou</string>
     <string name="anwser">Répond à la question suivante :</string>
-    <string name="button_circle">Jeux du cercle</string>
-    <string name="button_anwser">Jeux de l\'énigme</string>
+    <string name="button_circle">Savoir visser un ecrou</string>
+    <string name="button_anwser">Être bon en calcul mental</string>
+    <string name="submit">SUBMIT</string>
+    <string name="nombre">nombre</string>
+    <string name="reponse"></string>
+    <string name="button_mouv">Être un bon réparateur</string>
+    <string name="math_answer">0</string>
+    <string name="garagisme">Pour être un bon garagiste il faut :</string>
 </resources>

@@ -10,29 +10,48 @@ public class OnePlayerActivity extends AppCompatActivity {
     private Button answer;
     private Button circle;
     private Button shake;
+    private Button mouv;
+    private Button all;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_one_player);
-        answer = (Button) findViewById(R.id.button4);
+        answer = (Button) findViewById(R.id.answer);
         answer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openAnswerActivity();
             }
         });
-        circle = (Button) findViewById(R.id.button5);
+        circle = (Button) findViewById(R.id.circle);
         circle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCircleActivity();
             }
         });
-        shake = (Button) findViewById(R.id.button6);
+        shake = (Button) findViewById(R.id.shake);
         shake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openShakeActivity();
+            }
+        });
+        mouv = (Button) findViewById(R.id.mouv);
+        mouv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMouvActivity();
+            }
+        });
+
+
+        all = (Button) findViewById(R.id.all);
+        all.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAllActivity();
             }
         });
     }
@@ -46,6 +65,15 @@ public class OnePlayerActivity extends AppCompatActivity {
     }
     public void openShakeActivity(){
         Intent intent = new Intent(this, ShakeActivity.class);
+        startActivity(intent);
+    }
+    public void openMouvActivity(){
+        Intent intent = new Intent(this, MouvActivity.class);
+        startActivity(intent);
+    }
+    public void openAllActivity(){
+        Intent intent = new Intent(this, AnswerActivity.class);
+        intent.putExtra("all",true);
         startActivity(intent);
     }
 }

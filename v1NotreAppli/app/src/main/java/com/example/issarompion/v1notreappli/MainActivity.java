@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
   private Button oneplayer;
+  private Button twoplayers;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,10 +20,21 @@ public class MainActivity extends AppCompatActivity {
                 openOnePlayerActivity();
             }
         });
+        twoplayers = (Button) findViewById(R.id.button2);
+        twoplayers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTwoPlayersActivity();
+            }
+        });
     }
 
     public void openOnePlayerActivity(){
         Intent intent = new Intent(this, OnePlayerActivity.class);
+        startActivity(intent);
+    }
+    public void openTwoPlayersActivity(){
+        Intent intent = new Intent(this, TwoPlayersActivity.class);
         startActivity(intent);
     }
 }
