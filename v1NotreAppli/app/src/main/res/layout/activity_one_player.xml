@@ -67,7 +67,7 @@
         android:layout_marginLeft="72dp"
         android:layout_marginTop="40dp"
         android:background="@color/colorWhite"
-        android:text="Connaître ses outils"
+        android:text="Trouver un jeu"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mouv" />
@@ -95,7 +95,7 @@
         android:layout_marginBottom="8dp"
         android:background="@color/colorBlack"
         android:text="Etre bon partout"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shake2" />
