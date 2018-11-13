@@ -4,15 +4,17 @@
 
 1. Lancement avec écran d'accueil personnalisé avec le nom de notre appli et notre logo
 2. Défis choisis 
+
 ## Défis de geste :
 
-- Secouer son téléphone jusqu'à qu'un clou vu de côté soit planté avec un marteau
-- Labyrinthe pour permettre à un garagiste de rejoindre sa caisse à outils
+- Visser un nombre de fois donné en prenant le téléphone comme tournevis
+- 
 
 ## Défis de mouvement :
+- Visser un écrou
+- Réparer le logo de l'équipe de France
 
-- Choisir ce qu'on met dans une boîte à gants / ciasse à outils en swipant à gauche ou à droite
 ## Defis de réponse à une question :
 
-- Question de calcul mental (nombre nombre aléatoire entre 1 et 10, choisir entre + et -)
-- Question sur le nombre de chevaux d'un modèle de voiture en mode le juste prix
+- Question de calcul mental sur des vis (nombre nombre aléatoire entre 1 et 10, choisir entre + et -)
+- Retrouver un outil avec les lettres dans le désordre
