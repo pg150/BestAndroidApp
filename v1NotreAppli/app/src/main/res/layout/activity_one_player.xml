@@ -10,12 +10,12 @@
     <Button
         android:id="@+id/answer"
         android:layout_width="245dp"
-        android:layout_height="45dp"
+        android:layout_height="35dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
-        android:layout_marginTop="68dp"
-        android:text="@string/button_anwser"
+        android:layout_marginTop="72dp"
         android:background="@color/colorWhite"
+        android:text="@string/button_anwser"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +23,7 @@
     <Button
         android:id="@+id/circle"
         android:layout_width="245dp"
-        android:layout_height="45dp"
+        android:layout_height="35dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="40dp"
@@ -36,7 +36,7 @@
     <Button
         android:id="@+id/shake"
         android:layout_width="245dp"
-        android:layout_height="45dp"
+        android:layout_height="35dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="40dp"
@@ -49,7 +49,7 @@
     <Button
         android:id="@+id/mouv"
         android:layout_width="245dp"
-        android:layout_height="45dp"
+        android:layout_height="35dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="40dp"
@@ -62,12 +62,12 @@
     <Button
         android:id="@+id/quiz"
         android:layout_width="245dp"
-        android:layout_height="45dp"
+        android:layout_height="35dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="40dp"
         android:background="@color/colorWhite"
-        android:text="Trouver un jeu"
+        android:text="Connaître ses outils par coeur"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mouv" />
@@ -75,7 +75,7 @@
     <Button
         android:id="@+id/shake2"
         android:layout_width="245dp"
-        android:layout_height="45dp"
+        android:layout_height="35dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="40dp"
@@ -88,15 +88,13 @@
     <Button
         android:id="@+id/all"
         android:layout_width="245dp"
-        android:layout_height="60dp"
+        android:layout_height="45dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="40dp"
-        android:layout_marginBottom="8dp"
         android:background="@color/colorBlack"
         android:text="Etre bon partout"
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shake2" />
 

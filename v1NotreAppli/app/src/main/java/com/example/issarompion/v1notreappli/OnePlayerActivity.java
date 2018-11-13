@@ -11,6 +11,7 @@ public class OnePlayerActivity extends AppCompatActivity {
     private Button circle;
     private Button shake;
     private Button mouv;
+    private Button quiz;
     private Button all;
 
     @Override
@@ -45,7 +46,13 @@ public class OnePlayerActivity extends AppCompatActivity {
                 openMouvActivity();
             }
         });
-
+        quiz = (Button) findViewById(R.id.quiz);
+        quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openQuizActivity();
+            }
+        });
 
         all = (Button) findViewById(R.id.all);
         all.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +76,10 @@ public class OnePlayerActivity extends AppCompatActivity {
     }
     public void openMouvActivity(){
         Intent intent = new Intent(this, MouvActivity.class);
+        startActivity(intent);
+    }
+    public void openQuizActivity(){
+        Intent intent = new Intent(this, QuizActivity.class);
         startActivity(intent);
     }
     public void openAllActivity(){
