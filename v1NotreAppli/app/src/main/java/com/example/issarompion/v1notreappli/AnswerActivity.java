@@ -9,9 +9,8 @@ import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.Random;
-
+import android.media.*;
 
 public class AnswerActivity extends AppCompatActivity {
     int value1;
@@ -21,10 +20,17 @@ public class AnswerActivity extends AppCompatActivity {
     boolean all;
     long depart;
 
+    MediaPlayer musicW;
+    MediaPlayer musicL;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_answer);
+
+        musicW = MediaPlayer.create(this, R.raw.win);
+        musicL = MediaPlayer.create(this, R.raw.lose);
+
 
         all = getIntent().getBooleanExtra("all",false);
         simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer);
@@ -35,7 +41,7 @@ public class AnswerActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         value1 = getRandomNumber(0,20);
-        value2 = getRandomNumber(0,20);
+        value2 = getRandomNumber(0,value1);
         op = getRandomNumber(0,1);
 
         if(op==0){
@@ -58,6 +64,7 @@ public class AnswerActivity extends AppCompatActivity {
         if (op==0){
             if(userAnswer == value1+value2) {
                 simpleChronometer.stop();
+                musicW.start();
                 showToast("Bonne réponse !");
                 if(all) openNextActivity();
 
@@ -65,16 +72,19 @@ public class AnswerActivity extends AppCompatActivity {
 
             } else {
                 showToast("Mauvaise réponse. Recommencez !");
+                musicL.start();
             }
         }
         else{
             if(userAnswer == value1-value2) {
                 simpleChronometer.stop();
+                musicW.start();
                 showToast("Bonne réponse !");
                 if(all) openNextActivity();
 
             } else {
                 showToast("Mauvaise réponse. Recommencez !");
+                musicL.start();
             }
         }
 
