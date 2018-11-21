@@ -55,7 +55,7 @@ public class OnePlayerActivity extends AppCompatActivity {
             }
         });
         cric = (Button) findViewById(R.id.cric);
-        quiz.setOnClickListener(new View.OnClickListener() {
+        cric.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCricActivity();

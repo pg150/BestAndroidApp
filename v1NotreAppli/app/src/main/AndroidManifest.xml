@@ -71,6 +71,11 @@
             android:configChanges="orientation"
             android:label="Défi question 2 : Les outils"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".CricActivity"
+            android:configChanges="orientation"
+            android:label="Défi Geste 2 : Le Cric"
+            android:screenOrientation="portrait" />
         <activity android:name=".ServerActivity" />
         <activity android:name=".ClientActivity"></activity>
     </application>
