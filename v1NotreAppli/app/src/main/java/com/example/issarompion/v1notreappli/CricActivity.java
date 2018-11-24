@@ -1,6 +1,7 @@
 package com.example.issarompion.v1notreappli;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,7 +25,7 @@ public class CricActivity extends AppCompatActivity implements SensorEventListen
     private SensorManager sensorManager;
     private Sensor accelerometer;
     private float deltaZ = 0;
-    private TextView currentX;
+    private TextView currentZ;
     public Vibrator v;
     int counter =1 ;
     boolean bool = false;
@@ -33,12 +34,16 @@ public class CricActivity extends AppCompatActivity implements SensorEventListen
     long base;
     long depart;
 
+    MediaPlayer musicC;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cric);
+
+        musicC = MediaPlayer.create(this, R.raw.soncric);
+
 
         simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer);
         all = getIntent().getBooleanExtra("all",false);
@@ -55,9 +60,9 @@ public class CricActivity extends AppCompatActivity implements SensorEventListen
         setSupportActionBar(toolbar);
         initControls();
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        if (sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER) != null) {
+        if (sensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY) != null) {
             // success! we have an accelerometer
-            accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+            accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY);
             sensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         } else {
             // fail we don't have an accelerometer!
@@ -67,7 +72,7 @@ public class CricActivity extends AppCompatActivity implements SensorEventListen
     }
 
     public void initControls() {
-        currentX = (TextView) findViewById(R.id.currentX);
+        currentZ = (TextView) findViewById(R.id.currentZ);
     }
     //onResume() register the accelerometer for listening the events
     protected void onResume() {
@@ -86,13 +91,14 @@ public class CricActivity extends AppCompatActivity implements SensorEventListen
     public void onSensorChanged(SensorEvent event) {
 
         // get the change of the x,y,z values of the accelerometer
-        deltaZ = Math.abs(lastZ - event.values[0]);
+        deltaZ = Math.abs(lastZ - event.values[2]);
         // if the change is below 2, it is just plain noise
         if (deltaZ < 2)
             deltaZ = 0;
 
         if(deltaZ>9) bool = true;
         if(deltaZ<4 && bool) {
+            musicC.start();
             counter+=1;
             bool=false;
         }
