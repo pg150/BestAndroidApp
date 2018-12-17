@@ -115,7 +115,7 @@ public class ShakeActivity extends AppCompatActivity implements SensorEventListe
 
     public void openNextActivity(){
         long temps = (SystemClock.elapsedRealtime()-depart)/1000;
-        Intent intent = new Intent(this, QuizActivity.class);
+        Intent intent = new Intent(this, CricActivity.class);
         intent.putExtra("chrono",temps);
         intent.putExtra("all",true);
         intent.putExtra("depart",depart);
