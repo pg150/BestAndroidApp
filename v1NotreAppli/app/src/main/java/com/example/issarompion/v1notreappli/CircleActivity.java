@@ -1,6 +1,7 @@
 package com.example.issarompion.v1notreappli;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,10 +24,15 @@ public class CircleActivity extends AppCompatActivity implements RotationGesture
     long base;
     long depart;
 
+    MediaPlayer musicW;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_circle);
+
+        musicW = MediaPlayer.create(this, R.raw.win);
 
         simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer);
         all = getIntent().getBooleanExtra("all",false);
@@ -65,6 +71,7 @@ public class CircleActivity extends AppCompatActivity implements RotationGesture
         System.out.println(angle);
         if(counter==100){
             simpleChronometer.stop();
+            musicW.start();
             showToast("Bien joué !");
             if(all) openNextActivity();
         }

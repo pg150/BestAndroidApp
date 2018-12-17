@@ -2,6 +2,7 @@ package com.example.issarompion.v1notreappli;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
@@ -23,10 +24,14 @@ public class MouvActivity extends AppCompatActivity {
     long base;
     long depart;
 
+    MediaPlayer musicM;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mouv);
+
+        musicM = MediaPlayer.create(this, R.raw.maestro);
 
         simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer);
         all = getIntent().getBooleanExtra("all",false);
@@ -89,6 +94,7 @@ public class MouvActivity extends AppCompatActivity {
                     ((ImageView) v).setImageResource(resAct);
                     // Display toast
                     simpleChronometer.stop();
+                    musicM.start();
                     showToast("Bien joué vous êtes champion du monde");
                     if(all) openNextActivity();
                     break;

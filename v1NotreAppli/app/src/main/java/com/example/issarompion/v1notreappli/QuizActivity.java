@@ -1,6 +1,7 @@
 package com.example.issarompion.v1notreappli;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,10 +25,17 @@ public class QuizActivity extends AppCompatActivity {
     String answer;
     ArrayList<Outil> OutilList = new ArrayList<Outil>();
 
+    MediaPlayer musicW;
+    MediaPlayer musicL;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        musicW = MediaPlayer.create(this, R.raw.win);
+        musicL = MediaPlayer.create(this, R.raw.lose);
+
 
         simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer);
         all = getIntent().getBooleanExtra("all",false);
@@ -77,10 +85,12 @@ public class QuizActivity extends AppCompatActivity {
 
             if(Attempt.getText().toString().equals(answer)) {
                 simpleChronometer.stop();
+                musicW.start();
                 showToast("Bonne réponse !");
                 if(all) openNextActivity();
 
             } else {
+                musicL.start();
                 showToast("Mauvaise réponse. Recommencez !");
             }
         }

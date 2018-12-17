@@ -35,6 +35,7 @@ public class CricActivity extends AppCompatActivity implements SensorEventListen
     long depart;
 
     MediaPlayer musicC;
+    MediaPlayer musicW;
 
 
     @Override
@@ -43,7 +44,7 @@ public class CricActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_cric);
 
         musicC = MediaPlayer.create(this, R.raw.soncric);
-
+        musicW = MediaPlayer.create(this, R.raw.win);
 
         simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer);
         all = getIntent().getBooleanExtra("all",false);
@@ -105,6 +106,7 @@ public class CricActivity extends AppCompatActivity implements SensorEventListen
 
         if(counter==3){
             simpleChronometer.stop();
+            musicW.start();
             showToast("Bien joué !");
             if(all) openNextActivity();
         }
