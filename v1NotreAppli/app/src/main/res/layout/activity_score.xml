@@ -11,13 +11,12 @@
         android:id="@+id/score"
         android:layout_width="131dp"
         android:layout_height="100dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginLeft="124dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
         android:text="Score"
         android:textColor="@color/colorWhite"
         android:textSize="50sp"
-        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,4 +58,15 @@
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/change" />
+
+    <ImageView
+        android:id="@+id/garagistescore"
+        android:layout_width="116dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/score"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/garagistescore" />
+
 </android.support.constraint.ConstraintLayout>
