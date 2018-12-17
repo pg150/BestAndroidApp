@@ -13,7 +13,7 @@
     <application
         android:allowBackup="true"
         android:configChanges="orientation"
-        android:icon="@mipmap/mon_icone"
+        android:icon="@mipmap/garagiste"
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
