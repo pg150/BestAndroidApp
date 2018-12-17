@@ -6,7 +6,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84775309-4a7a-4b22-bab7-3c76ee7cbf9e" name="Default" comment="" />
+    <list default="true" id="84775309-4a7a-4b22-bab7-3c76ee7cbf9e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/v1NotreAppli/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/v1NotreAppli/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +29,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BestAndroidApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestAndroidApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
