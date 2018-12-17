@@ -24,7 +24,7 @@
         android:layout_marginStart="19dp"
         android:layout_marginLeft="19dp"
         android:layout_marginTop="68dp"
-        android:textColor="@color/colorPrimary"/>
+        android:textColor="@color/colorBlue"/>
 
     <ImageView
         android:id="@+id/ecrou"
@@ -43,6 +43,6 @@
         android:text="Visse l'ecrou"
         android:textSize="25sp"
         android:gravity="center"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorBlue"
         />
 </RelativeLayout>
