@@ -94,7 +94,7 @@ public class CircleActivity extends AppCompatActivity implements RotationGesture
     public void openNextActivity(){
         long temps = (SystemClock.elapsedRealtime()-depart)/1000;
         System.out.println(temps);
-        Intent intent = new Intent(this, MouvActivity.class);
+        Intent intent = new Intent(this, ShakeActivity.class);
         intent.putExtra("chrono",temps);
         intent.putExtra("all",true);
         intent.putExtra("depart",depart);

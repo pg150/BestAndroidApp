@@ -34,17 +34,17 @@
         <activity
             android:name=".AnswerActivity"
             android:configChanges="orientation"
-            android:label="Défi question 1 : Maths"
+            android:label="Défi question 1 : Le QI d'Einstein"
             android:screenOrientation="portrait" />
         <activity
             android:name=".CircleActivity"
             android:configChanges="orientation"
-            android:label="Défi mouvement 1 : L&apos;écrou "
+            android:label="Défi mouvement 1 : Le doigt dans l'engrenage"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MouvActivity"
             android:configChanges="orientation"
-            android:label="Défi mouvement 2 : L&apos;équipe de France"
+            android:label="Défi mouvement 2 : Allez les bleus de travail"
             android:screenOrientation="portrait" />
         <activity
             android:name=".TwoPlayersActivity"
@@ -57,15 +57,13 @@
         <activity
             android:name=".QuizActivity"
             android:configChanges="orientation"
-            android:label="Défi question 2 : Les outils"
+            android:label="Défi question 2 : La boite à outils"
             android:screenOrientation="portrait" />
         <activity
             android:name=".CricActivity"
             android:configChanges="orientation"
-            android:label="Défi Geste 2 : Le Cric"
+            android:label="Défi Geste 2 : Le Cric Crac"
             android:screenOrientation="portrait" />
-        <activity android:name=".ServerActivity" />
-        <activity android:name=".ClientActivity" />
         <activity android:name=".p2p" />
         <activity
             android:name=".Splash_screen"

@@ -125,7 +125,7 @@ public class QuizActivity extends AppCompatActivity {
 
     public void openNextActivity(){
         long temps = (SystemClock.elapsedRealtime()-depart)/1000;
-        Intent intent = new Intent(this, ScoreActivity.class);
+        Intent intent = new Intent(this, MouvActivity.class);
         intent.putExtra("chrono",temps);
         intent.putExtra("all",true);
         intent.putExtra("depart",depart);
