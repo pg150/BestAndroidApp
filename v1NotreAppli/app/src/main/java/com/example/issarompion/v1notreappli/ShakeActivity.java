@@ -91,8 +91,7 @@ public class ShakeActivity extends AppCompatActivity implements SensorEventListe
         // get the change of the x,y,z values of the accelerometer
         deltaX = Math.abs(lastX - event.values[0]);
         // if the change is below 2, it is just plain noise
-        if (deltaX < 2)
-        deltaX = 0;
+        if (deltaX < 2) deltaX = 0;
 
         if(deltaX>9) bool = true;
         if(deltaX<4 && bool) {
@@ -100,11 +99,12 @@ public class ShakeActivity extends AppCompatActivity implements SensorEventListe
             bool=false;
         }
 
-        if(counter==3){
+        if(counter==4){
             simpleChronometer.stop();
             musicW.start();
             showToast("Bien joué !");
             if(all) openNextActivity();
+            counter ++;
         }
 
     }

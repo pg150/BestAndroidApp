@@ -94,8 +94,7 @@ public class CricActivity extends AppCompatActivity implements SensorEventListen
         // get the change of the x,y,z values of the accelerometer
         deltaZ = Math.abs(lastZ - event.values[2]);
         // if the change is below 2, it is just plain noise
-        if (deltaZ < 2)
-            deltaZ = 0;
+        if (deltaZ < 2) deltaZ = 0;
 
         if(deltaZ>9) bool = true;
         if(deltaZ<4 && bool) {
@@ -109,6 +108,7 @@ public class CricActivity extends AppCompatActivity implements SensorEventListen
             musicW.start();
             showToast("Bien joué !");
             if(all) openNextActivity();
+            counter ++;
         }
 
     }
